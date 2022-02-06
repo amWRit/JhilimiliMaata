@@ -1,0 +1,105 @@
+<!-- https://codepen.io/vigzmv/pen/dVLmVG --> 
+<html>
+    <head>
+        <title>Jhilimili Maata</title>
+       	<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js"></script>
+
+
+        <link rel="stylesheet" href="./css/styles.css" media="all">
+		<link rel="stylesheet" href="./css/blockquote.css" media="all">
+		
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap" rel="stylesheet">
+    </head>
+    <body>
+				
+        <div id="container">
+			<div id="mata" style="margin-top: 15px;">
+				<img src="images/mata2.png" alt="Jhilimili Maata">							
+			</div>
+				<div id='output'></div>
+				<div class = "text" id="be-ready">- BE READY TO RECEIVE BLESSINGS FROM -</div>
+			
+
+			<div id="mata-text" style="display: none">
+
+				<div class="text">- THE WAIT IS OVER -</div>
+				<div class="text">YOU HAVE BEEN BLESSED BY</div>
+					
+				<!-- <div id="maata_name" class="rainbow">JHILIMILI MAATA</div> -->
+				
+			</div>
+			
+			<h1 class="rainbow">JHILIMILI MAATA</h1>
+			
+
+			<!--
+            <div id="cake">
+				<div id="flame">
+					<div id="inner-flame"></div>
+				</div>
+				<div class="underline"></div>
+            </div>
+			 -->
+			<button class="button-62" id="show-btn" role="button"> WHEN WILL I BE BLESSED? </button>
+			
+            <div id="countdown" style="display: none">
+				<div id="cdDays">
+					<div class="spacer"></div>
+					<div id="daysNum"></div>
+					<div class="label">DAY(S)</div>
+				</div>
+				<div id="cdHours">
+					<div class="spacer"></div>
+					<div id="hoursNum"></div>
+					<div class="label">HOURS</div>
+				</div>
+				<div id="cdMins">
+					<div class="spacer"></div>
+					<div id="minsNum"></div>
+					<div class="label">MINUTES</div>
+				</div>
+				<div id="cdSecs">
+					<div class="spacer"></div>
+					<div id="secsNum"></div>
+					<div class="label">SECONDS</div>
+				</div>
+				<!-- <div id="text">- UNTIL THE MANIFESTATION -</div> -->
+				<div class="text">- THE MANIFESTATION WILL SOON BEGIN -</div>
+				<br><br>
+            </div>
+        </div>
+		
+		<script type="text/javascript">
+			$.get("jhilimiliQuotes.txt", function(data) {    
+				let lines = data.split("\n");
+				let quote = lines[Math.floor(Math.random() * lines.length)]
+				console.log(quote);
+				
+				$('#output').append('<div id="quote" class="blockquote"><h1>' + quote + '</h1></div>');
+				//$('#output').append('<blockquote id="quote" class="blockquote"><p>' + quote + '</p></blockquote>');
+			});
+		</script>
+    </body>
+
+    <!-- <script src="./js/removeBanner.js"></script> -->
+	<!-- <script> -->
+		<!-- const element = document.getElementById("show-btn"); -->
+		<!-- element.addEventListener("click", function() { -->
+		  <!-- document.getElementById("countdown").style.display = "block"; -->
+		<!-- }); -->
+	<!-- </script> -->
+	<script type="text/javascript" src="./js/birthday.js"></script>
+	
+
+<html>
+
+<!-- <div class="blockquote-wrapper"> -->
+  <!-- <div class="blockquote"> -->
+	<!-- <h1> -->
+	 <!-- Intuitive design happens when <span style="color:#ffffff">current knowledge</span> is the same as the <span style="color:#ffffff">target knowledge.</span> -->
+	 <!-- </h1> -->
+	<!-- <h4>&mdash;Jared Spool<br><em>Web Site Usability: A Designer's Guide</em></h4> -->
+  <!-- </div> -->
+<!-- </div> -->
